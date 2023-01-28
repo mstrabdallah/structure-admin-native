@@ -1,0 +1,49 @@
+@import "variables";
+
+.indexPage {
+  .cardHead {
+    .cardS1 {
+      display: flex;
+      padding: 15px;
+      .icon {
+        flex-shrink: 0;
+        margin-inline-end: 15px;
+        width: 42px;
+      }
+
+      .name {
+        text-transform: capitalize;
+        height: 25px;
+        font-weight: 400;
+        font-size: 12px;
+        overflow: hidden;
+        &:lang(en) {
+          letter-spacing: 0.003em;
+        }
+      }
+      .sectionNumber {
+        display: flex;
+        align-items: center;
+
+        .number {
+          font-weight: 600;
+          font-size: 24px;
+          color: $c-f-p;
+          margin-inline-end: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1257px) {
+    .cardHead {
+      .card {
+        flex-direction: column;
+        text-align: center;
+        .icon {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

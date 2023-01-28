@@ -1,0 +1,40 @@
+.indexPage .cardHead .cardS1 {
+  display: flex;
+  padding: 15px;
+}
+.indexPage .cardHead .cardS1 .icon {
+  flex-shrink: 0;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  width: 42px;
+}
+.indexPage .cardHead .cardS1 .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 400;
+  font-size: 12px;
+  overflow: hidden;
+}
+.indexPage .cardHead .cardS1 .name:lang(en) {
+  letter-spacing: 0.003em;
+}
+.indexPage .cardHead .cardS1 .sectionNumber {
+  display: flex;
+  align-items: center;
+}
+.indexPage .cardHead .cardS1 .sectionNumber .number {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-f-primary);
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+@media (max-width: 1257px) {
+  .indexPage .cardHead .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .indexPage .cardHead .card .icon {
+    margin: 0;
+  }
+}

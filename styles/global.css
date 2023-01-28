@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --bs-primary: #39a935;
+  --bs-secondary: #ff7701;
+  --bs-success: #39a935;
+  --bs-info: #0dcaf0;
+  --bs-font-sans-serif: "Poppins", sans-serif;
+  --color-primary: #39a935;
+  --color-second: #ff7701;
+  --color-third: #e5f0e4;
+  --color-error: #fc5a5a;
+  --color-f-primary: #1f1f1f;
+  --color-f-second: #868686;
+  --color-f-third: #969696;
+  --color-f-fourth: #121212;
+  --color-bg-primary: #ff0;
+  --color-bg-second: #ff0;
+  --c-b-p: #969696;
+  --c-b-s: #e5e5e5;
+  --letter-spacing: 0.2em;
+  --f-en: "Poppins", sans-serif;
+  --f-ar: "Almarai", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 14px;
+  color: var(--color-f-second);
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+
+body:lang(en) {
+  font-family: var(--f-en);
+}
+
+body:lang(ar) {
+  --bs-font-sans-serif: $f-ar;
+  font-family: var(--f-ar);
+  direction: rtl;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  color: var(--color-f-second);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary);
+}
+
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-f-primary);
+  margin: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+h1 :hover,
+h2 :hover,
+h3 :hover,
+h4 :hover {
+  all: unset;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scroll {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.app {
+  display: flex;
+}
+
+.containerS1 {
+  padding: 0px 40px;
+  width: 100%;
+}
+
+.pageS1 {
+  margin-top: 45px;
+}

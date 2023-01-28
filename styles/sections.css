@@ -1,0 +1,272 @@
+.sectionS1 {
+  background: #ffffff;
+  box-shadow: 10px 24px 74px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+  border-radius: 10px;
+}
+.sectionS1.noPadding {
+  padding: 0px;
+}
+.sectionS1 .contentPadding {
+  padding: 24px;
+}
+
+.sectionS2 {
+  background: #ffffff;
+  box-shadow: 10px 24px 74px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+}
+.sectionS2 .head {
+  padding: 15px 20px;
+  border-bottom: 1px solid #efefef;
+  text-transform: capitalize;
+}
+
+.headS1 {
+  padding: 15px 24px;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.headWithBack {
+  display: flex;
+  align-items: center;
+}
+.headWithBack h1 {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: var(--color-f-primary);
+  font-weight: 600;
+}
+.headWithBack svg {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  cursor: pointer;
+}
+
+label {
+  color: var(--color-f-primary) !important;
+}
+
+.ButtonClickS1 {
+  gap: 10px;
+  background: #ebf6eb;
+  color: var(--color-primary);
+  width: 100%;
+  border: none;
+  padding: 10px;
+  height: 40px;
+}
+
+.ButtonClickS2 {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 6px 10px;
+  gap: 10px;
+  background: #fce5e5;
+  color: var(--color-error);
+  width: 100%;
+  border: none;
+}
+
+.ButtonClickS3 {
+  border-radius: 4px;
+  padding: 6px 10px;
+  gap: 10px;
+  color: var(--color-primary);
+  width: 100%;
+  border: none;
+}
+.ButtonClickS3:hover {
+  color: var(--color-primary) !important;
+}
+
+.headerApp {
+  height: 92px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sidebarApp {
+  width: 250px;
+  display: block;
+  flex-shrink: 0;
+}
+.sidebarApp .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: #fff;
+  z-index: 100;
+}
+.sidebarApp .sidebar:lang(ar) {
+  right: 0;
+  left: auto;
+}
+.sidebarApp .sidebar header {
+  margin-top: 15px;
+  position: relative;
+}
+.sidebarApp .sidebar header .logoLarge {
+  -webkit-margin-start: 12px;
+          margin-inline-start: 12px;
+}
+.sidebarApp .sidebar header .logoSmall {
+  padding: 0px 13px;
+}
+.sidebarApp .sidebar header .toggleP {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  width: 100%;
+  top: 84px;
+}
+.sidebarApp .sidebar header .toggleP .toggle {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #f7f7f7;
+  -webkit-margin-end: -10px;
+          margin-inline-end: -10px;
+}
+.sidebarApp .sidebar header .toggleP .toggle svg {
+  color: #595959;
+}
+.sidebarApp .sidebar .menu {
+  margin-top: 65px;
+}
+.sidebarApp .sidebar .menu ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+.sidebarApp .sidebar .menu ul li:hover path {
+  stroke: var(--color-f-primary);
+}
+.sidebarApp .sidebar .menu ul li:hover a {
+  color: var(--color-f-primary);
+}
+.sidebarApp .sidebar .menu ul li .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  -webkit-margin-start: 25px;
+          margin-inline-start: 25px;
+  -webkit-margin-end: 14px;
+          margin-inline-end: 14px;
+}
+.sidebarApp.close, .sidebarApp.hide {
+  width: 75px;
+}
+.sidebarApp.close .logoLarge, .sidebarApp.hide .logoLarge {
+  display: none;
+}
+.sidebarApp.close .logoSmall, .sidebarApp.hide .logoSmall {
+  display: block;
+}
+.sidebarApp.close .sidebar, .sidebarApp.hide .sidebar {
+  width: 75px;
+}
+.sidebarApp.close .sidebar .text, .sidebarApp.hide .sidebar .text {
+  opacity: 0;
+}
+.sidebarApp.close .sidebar .image:lang(ar), .sidebarApp.hide .sidebar .image:lang(ar) {
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+.sidebarApp.close .sidebar .toggle, .sidebarApp.hide .sidebar .toggle {
+  transform: translateY(-50%) rotate(180deg);
+}
+.sidebarApp.hide .toggle {
+  transform: translateY(-50%) rotate(0deg) !important;
+}
+.sidebarApp.hide.close {
+  background: #fff;
+  -webkit-margin-start: -54px;
+          margin-inline-start: -54px;
+}
+.sidebarApp.hide.close .sidebar {
+  -webkit-margin-start: -54px;
+          margin-inline-start: -54px;
+}
+.sidebarApp.hide.close .sidebar .toggle {
+  transform: translateY(-50%) rotate(180deg) !important;
+}
+.sidebarApp .logoSmall {
+  display: none;
+}
+.sidebarApp li a {
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.sidebarApp li a.active {
+  position: relative;
+  color: var(--color-primary) !important;
+}
+.sidebarApp li a.active::before {
+  content: "";
+  height: 44px;
+  width: 5px;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 0px 4px 4px 0px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  background: var(--color-primary);
+  position: absolute;
+}
+.sidebarApp li a.active svg path {
+  stroke: var(--color-primary) !important;
+}
+.sidebarApp .menu-bar {
+  height: calc(100% - 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.sidebarApp .menu-bar::-webkit-scrollbar {
+  display: none;
+}
+.sidebarApp header {
+  margin-left: 10px;
+}
+.sidebarApp header .image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+.sidebarApp header .toggle:lang(ar) {
+  left: -35px;
+  right: auto;
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.salesPurchases {
+  margin-top: 20px;
+}
